@@ -2,7 +2,7 @@
 # Initiate ServiceNow to Jira Integration   #
 # Created by Dion Walker                    #
 # On 4/12/2023                              #
-# Revision 1                                #
+# Revision 2                                #
 #############################################
 
 $date=Get-Date -UFormat "%m-%d-%Y-%R"
