@@ -225,6 +225,6 @@ foreach($dir in $dirs){
 
 }
 
-Send-MailMessage -From NoReply.RemoveNTFSAccessReport@smtpdomain -To targeted mail objects -Subject "Remove BK-Public NTFS Access Report $date" -Body "Hello,`n`n`The attached document contains the list of folders or shares which had specific NTFS permissions revoked.`n`nThe listed RES groups retain access and can be found in Aveksa for entiltement. `n`nA copy of this report is also stored here: uncpath\Reports\ `n`nThank you" -Attachments $outputPath -Priority Normal -SMTPServer smtp-relay
+Send-MailMessage -From NoReply.RemoveNTFSAccessReport@smtpdomain -To targeted mail objects -Subject "Remove NTFS Access Report $date" -Body "Hello,`n`n`The attached document contains the list of folders or shares which had specific NTFS permissions revoked.`n`nThe listed RES groups retain access and can be found in Aveksa for entiltement. `n`nA copy of this report is also stored here: uncpath\Reports\ `n`nThank you" -Attachments $outputPath -Priority Normal -SMTPServer smtp-relay
 
 Stop-Transcript
